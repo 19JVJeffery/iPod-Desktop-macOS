@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAEBED01E3959AC731D86D15 /* iPodDesktopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F5BFF9697DF975A38833C /* iPodDesktopApp.swift */; };
+		522C42C00FAE58BFD7769753 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379A554720FE930A1BB84D85 /* ContentView.swift */; };
+		216D60D18A62E7121DDF1993 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5370CA089789229E7CD5937E /* StatusBarView.swift */; };
+		C59C7AEDB7941CA4196E3A9E /* ClickWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC329C063FC5CEEA2D054443 /* ClickWheelView.swift */; };
+		D7EA387F03AF217070F226A6 /* iPodScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910AC008601CC83A3359781 /* iPodScreenView.swift */; };
+		FA088E12B82D9D6517C324FB /* DeviceBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F809034D11A8C207CCC24E1 /* DeviceBodyView.swift */; };
+		3A95607197C6CE86CFF9FE49 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A4B22BD3DDD487EBFAA06 /* ListRowView.swift */; };
+		881E887CDAECA47490235A8A /* iPodListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7F70C45D61D87165016E7 /* iPodListScreen.swift */; };
+		FA7B23BA21D0C3DAD483CEE3 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6CB6AD907737EECC54246 /* MainMenuView.swift */; };
+		D8A8342FE65E18335ED4C3CD /* MusicMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838243AC8D5C50787A6EDF7D /* MusicMenuView.swift */; };
+		80802F5D2347DFEFAB060452 /* BrowseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980784A81E7D1F046D416D9 /* BrowseViews.swift */; };
+		15C194A922B3DFD2AAE6669B /* PlaylistViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DE30ECCE48E64600D2CD76 /* PlaylistViews.swift */; };
+		C71E525605E8666D58C9009C /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D6710413996B326803A9A /* NowPlayingView.swift */; };
+		2436F58004E1CFDED20E37F1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0ABCB8FD2F400ED341AF9B /* SettingsView.swift */; };
+		98967BD8F645E1BC83A94E75 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F219FD03AAE1AD85F60AE /* SearchView.swift */; };
+		7327D79AE34AC8E2E2D144BF /* CoverFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C7F96466ED72B49E87F30 /* CoverFlowView.swift */; };
+		B7DDF981B9C71B19777F7017 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18CDA71E3BEEFDB78FD4C4 /* Track.swift */; };
+		695B1B9E43B85B40030A511C /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7086358F0C9F37BE22206BC3 /* Playlist.swift */; };
+		51FCE867D5A28A0EA50DFB21 /* iPodColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79D18D6681CEF0CD91D6E2 /* iPodColorScheme.swift */; };
+		673F8FF1AA81AB4161D368FC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4566E346FB8A96F8B5BDFF /* AppState.swift */; };
+		13FB38325BD3FBD0555CE0A0 /* PlayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD5772AAD420F10899B0D49 /* PlayerEngine.swift */; };
+		1815C235C4F0D4A38D2E71B2 /* LibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B871F1865D28E6545F74A8CD /* LibraryManager.swift */; };
+		CC6F8C08256E4BA082347E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3340C45202B29152467289 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC5F5BFF9697DF975A38833C /* iPodDesktopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPodDesktopApp.swift; sourceTree = "<group>"; };
+		379A554720FE930A1BB84D85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5370CA089789229E7CD5937E /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		DC329C063FC5CEEA2D054443 /* ClickWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickWheelView.swift; sourceTree = "<group>"; };
+		D910AC008601CC83A3359781 /* iPodScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPodScreenView.swift; sourceTree = "<group>"; };
+		3F809034D11A8C207CCC24E1 /* DeviceBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBodyView.swift; sourceTree = "<group>"; };
+		CD0A4B22BD3DDD487EBFAA06 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		7AE7F70C45D61D87165016E7 /* iPodListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPodListScreen.swift; sourceTree = "<group>"; };
+		F4E6CB6AD907737EECC54246 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		838243AC8D5C50787A6EDF7D /* MusicMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMenuView.swift; sourceTree = "<group>"; };
+		E980784A81E7D1F046D416D9 /* BrowseViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViews.swift; sourceTree = "<group>"; };
+		E3DE30ECCE48E64600D2CD76 /* PlaylistViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViews.swift; sourceTree = "<group>"; };
+		CC2D6710413996B326803A9A /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
+		2F0ABCB8FD2F400ED341AF9B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A52F219FD03AAE1AD85F60AE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A19C7F96466ED72B49E87F30 /* CoverFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowView.swift; sourceTree = "<group>"; };
+		0C18CDA71E3BEEFDB78FD4C4 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		7086358F0C9F37BE22206BC3 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		BE79D18D6681CEF0CD91D6E2 /* iPodColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPodColorScheme.swift; sourceTree = "<group>"; };
+		8C4566E346FB8A96F8B5BDFF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		ADD5772AAD420F10899B0D49 /* PlayerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEngine.swift; sourceTree = "<group>"; };
+		B871F1865D28E6545F74A8CD /* LibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryManager.swift; sourceTree = "<group>"; };
+		CC3340C45202B29152467289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0096DDB5D5C93DB7732319BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510982A84C425908FB7883C3 /* iPodDesktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPodDesktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6E8E7DF88D31078DBF4E18B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		450B220DE8EEB27904FC3DC4 = {
+			isa = PBXGroup;
+			children = (
+				96571FE3A5030301FFDDF985 /* iPodDesktop */,
+				30772F61AC9BDC8631745269 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30772F61AC9BDC8631745269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				510982A84C425908FB7883C3 /* iPodDesktop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C454586A1F4E28C340BDC1AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				379A554720FE930A1BB84D85 /* ContentView.swift */,
+				5370CA089789229E7CD5937E /* StatusBarView.swift */,
+				DC329C063FC5CEEA2D054443 /* ClickWheelView.swift */,
+				D910AC008601CC83A3359781 /* iPodScreenView.swift */,
+				3F809034D11A8C207CCC24E1 /* DeviceBodyView.swift */,
+				FECF9BEF2B7D9F5F97164536 /* Shared */,
+				DC2CE67AE862FDD3F1B74A6A /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FECF9BEF2B7D9F5F97164536 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CD0A4B22BD3DDD487EBFAA06 /* ListRowView.swift */,
+				7AE7F70C45D61D87165016E7 /* iPodListScreen.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DC2CE67AE862FDD3F1B74A6A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6CB6AD907737EECC54246 /* MainMenuView.swift */,
+				838243AC8D5C50787A6EDF7D /* MusicMenuView.swift */,
+				E980784A81E7D1F046D416D9 /* BrowseViews.swift */,
+				E3DE30ECCE48E64600D2CD76 /* PlaylistViews.swift */,
+				CC2D6710413996B326803A9A /* NowPlayingView.swift */,
+				2F0ABCB8FD2F400ED341AF9B /* SettingsView.swift */,
+				A52F219FD03AAE1AD85F60AE /* SearchView.swift */,
+				A19C7F96466ED72B49E87F30 /* CoverFlowView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9CF43B31E8845D861542A38E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C18CDA71E3BEEFDB78FD4C4 /* Track.swift */,
+				7086358F0C9F37BE22206BC3 /* Playlist.swift */,
+				BE79D18D6681CEF0CD91D6E2 /* iPodColorScheme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		420CEB417186B52ECF642348 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8C4566E346FB8A96F8B5BDFF /* AppState.swift */,
+				ADD5772AAD420F10899B0D49 /* PlayerEngine.swift */,
+				B871F1865D28E6545F74A8CD /* LibraryManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		96571FE3A5030301FFDDF985 /* iPodDesktop */ = {
+			isa = PBXGroup;
+			children = (
+				EC5F5BFF9697DF975A38833C /* iPodDesktopApp.swift */,
+				C454586A1F4E28C340BDC1AD /* Views */,
+				9CF43B31E8845D861542A38E /* Models */,
+				420CEB417186B52ECF642348 /* ViewModels */,
+				CC3340C45202B29152467289 /* Assets.xcassets */,
+				0096DDB5D5C93DB7732319BF /* Info.plist */,
+			);
+			path = iPodDesktop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E757D91215D317FF5AF7029D /* iPodDesktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2F1637DB5816A303A108A7 /* Build configuration list for PBXNativeTarget "iPodDesktop" */;
+			buildPhases = (
+				65FA6119905E087A5E53253D /* Sources */,
+				A6E8E7DF88D31078DBF4E18B /* Frameworks */,
+				7997A58CB6F97DD5FFDE7900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPodDesktop;
+			productName = iPodDesktop;
+			productReference = 510982A84C425908FB7883C3 /* iPodDesktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E757D91215D317FF5AF7029D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B10A263A9A2E94C6632E766F /* Build configuration list for PBXProject "iPodDesktop" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 450B220DE8EEB27904FC3DC4;
+			productRefGroup = 30772F61AC9BDC8631745269 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E757D91215D317FF5AF7029D /* iPodDesktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7997A58CB6F97DD5FFDE7900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6F8C08256E4BA082347E02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65FA6119905E087A5E53253D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAEBED01E3959AC731D86D15 /* iPodDesktopApp.swift in Sources */,
+				522C42C00FAE58BFD7769753 /* ContentView.swift in Sources */,
+				216D60D18A62E7121DDF1993 /* StatusBarView.swift in Sources */,
+				C59C7AEDB7941CA4196E3A9E /* ClickWheelView.swift in Sources */,
+				D7EA387F03AF217070F226A6 /* iPodScreenView.swift in Sources */,
+				FA088E12B82D9D6517C324FB /* DeviceBodyView.swift in Sources */,
+				3A95607197C6CE86CFF9FE49 /* ListRowView.swift in Sources */,
+				881E887CDAECA47490235A8A /* iPodListScreen.swift in Sources */,
+				FA7B23BA21D0C3DAD483CEE3 /* MainMenuView.swift in Sources */,
+				D8A8342FE65E18335ED4C3CD /* MusicMenuView.swift in Sources */,
+				80802F5D2347DFEFAB060452 /* BrowseViews.swift in Sources */,
+				15C194A922B3DFD2AAE6669B /* PlaylistViews.swift in Sources */,
+				C71E525605E8666D58C9009C /* NowPlayingView.swift in Sources */,
+				2436F58004E1CFDED20E37F1 /* SettingsView.swift in Sources */,
+				98967BD8F645E1BC83A94E75 /* SearchView.swift in Sources */,
+				7327D79AE34AC8E2E2D144BF /* CoverFlowView.swift in Sources */,
+				B7DDF981B9C71B19777F7017 /* Track.swift in Sources */,
+				695B1B9E43B85B40030A511C /* Playlist.swift in Sources */,
+				51FCE867D5A28A0EA50DFB21 /* iPodColorScheme.swift in Sources */,
+				673F8FF1AA81AB4161D368FC /* AppState.swift in Sources */,
+				13FB38325BD3FBD0555CE0A0 /* PlayerEngine.swift in Sources */,
+				1815C235C4F0D4A38D2E71B2 /* LibraryManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58FD848CCF68E97D15023EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETS_CATALOG_COMPILER_OPTIMIZATION = space;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = iPodDesktop/Info.plist;
+				LE_GAME_CENTER = NO;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ipoddesktop.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		3F8B8C39AD39952915D3439C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETS_CATALOG_COMPILER_OPTIMIZATION = space;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = iPodDesktop/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ipoddesktop.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AE0C377FDCAA5CAC04F3F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_ASSIGN = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7123587D58BC07BE71321599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE2F1637DB5816A303A108A7 /* Build configuration list for PBXNativeTarget "iPodDesktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FD848CCF68E97D15023EB9 /* Debug */,
+				3F8B8C39AD39952915D3439C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10A263A9A2E94C6632E766F /* Build configuration list for PBXProject "iPodDesktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE0C377FDCAA5CAC04F3F7C /* Debug */,
+				7123587D58BC07BE71321599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

@@ -1,199 +1,107 @@
 <div align="center">
 
-# 🎵 ClassiPod
+# 🎵 iPod Desktop — macOS
 
-![Classipod App Screenshots](screenshots/combined.jpg)
-
-Introducing "ClassiPod" – Your Timeless Audio Experience
-
-Step back in time with ClassiPod, a local music player app designed to capture the nostalgic essence
-of the iconic iPod Classic. Immerse yourself in the familiar click wheel interface and relive the
-joy of navigating your music library with a touch of retro charm.
+A native macOS music player that recreates the iconic iPod Classic experience.  
+Built entirely in Swift and SwiftUI — no cross-platform framework required.
 
 </div>
 
-🧭 Intuitive Navigation: Navigate through your music library effortlessly using the virtual click
-wheel. Scroll, click, and feel the tactile response as you rediscover the joy of selecting your
-favorite tracks with the same ease as the original iPod.
-
-🗃️ Local Music Library: ClassiPod is focused on your locally stored music files, ensuring that your
-personal music collection takes center stage. Organize your tracks, albums, and playlists just like
-you did on your trusty iPod Classic.
-
-🖌️ Customizable Themes: Personalize your ClassiPod experience with the option of silver or grey
-device frame. Choose from the two different color schemes to tailor the app's appearance to your
-unique style.
-
-🖼️ Cover Art Display: Immerse yourself in your music by appreciating album artwork on the vibrant
-display. ClassiPod pays homage to the visual appeal of classic iPods by showcasing your favorite
-album covers in a retro-inspired format.
-
-🎼 No Frills, Just Music: ClassiPod stays true to the essence of a music player – no distractions, no
-unnecessary features. Focus solely on the joy of listening to your favorite tunes without the
-complexities of a modern streaming service.
-
-🎧 Offline Listening: Enjoy your music without relying on an internet connection. ClassiPod is
-perfect for those moments when you want to disconnect and savor the tunes stored locally on your
-device.
-
-Relive the magic of the iPod Classic with ClassiPod – where timeless design meets the convenience of
-today. Download now and embark on a journey down memory lane with your music in the palm of your
-hand.
-
-If you like what you see, please ⭐ the repo.
+---
 
 ## ✨ Features
 
-- 🗃️ Ability to play multiple audio formats:- .mp3, .wav, .ogg, .flac, .m4a and .aac
-- 🔎 Choose a Custom Folder To Scan Music From (By Default it is the Device Music Folder in the root folder
-  of the device)
-- 🎨 Multiple Ipod Classic Device Colors (Silver and Black)
-- 🖼️ Displays the Music Metadata (Album Art, Artist Names)
-- ⏩ Ability to seek forward and backwards on a audio file (By Long Pressing the seek
-  forward/backwards buttons)
-- ⏮️ Ability to go to previous and next track in the playlist
-- 📱 Ipod Classic User Interface
-- 🎞️ Cover Flow View
-- 🎡 Click Wheel with Scrollable Rotation Enabled
-- 💿 Now Playing Screen with current music progress displayed
-- 🎶 Songs Screen with all the possible songs from the selected directory
-- 🧑‍🎤 Ability to Filter and Select From a Particular Artist, Album or Genre
-- 📲 Responsive Design For all Different Types of Screen Sizes
-- 🔋 Displays the current device battery level and charging status on the status bar
-- 🎧 Background Playback with Notification Control
-- 🔀 Shuffle Songs Feature
-- ➰ Loop Songs Feature (Loop one song or an entire playlist)
-- 🔉 Click Wheel Sounds
-- 📳 Vibration when clicking buttons and scrolling through the scroll wheel
-- 🔇 In App Volume Control
-- 🪞 Reflective Cover Art
-- ℹ️ About Screen
-- 🌍 Multi Language Support (Over 197 Languages Supported)
-- 👆 Touch Screen Support
-- 📺 Split Screen View (6th and 7th Gen iPod Classic)
-- 🔍 Ability to search songs, artists, playlists and albums
-- ⬇️ Caching Metadata of the songs for faster boot up times
-- 📃 Ability to Create and Store Custom User Created Playlists
-- 📖 App Usage Tutorial
-- ⭐ Song Rating Feature
+| | Feature |
+|---|---|
+| 🎡 | Click wheel with rotation gesture and five tap zones |
+| 🗃️ | Full local music library — MP3, WAV, FLAC, M4A, AAC, AIFF, OGG, Opus |
+| 🧑‍🎤 | Browse by Songs, Albums, Artists, Genres |
+| 🎞️ | Cover Flow view with 3-D artwork rotation |
+| 💿 | Now Playing screen with artwork, progress bar and transport controls |
+| 🔀 | Shuffle and Repeat (All / One) modes |
+| 📃 | User-created Playlists |
+| 🔍 | In-app Search |
+| 🎨 | 12 device colour themes (Silver, Black, Red, Blue, …) |
+| 🌓 | Light and Dark screen themes |
+| 🔋 | Live macOS battery indicator in the status bar |
+| ⭐ | Track star-rating |
+| 🔉 | Volume control via click wheel rotation on Now Playing |
+| ⌨️ | Full keyboard shortcuts via the Playback and Library menus |
+| 📦 | No external dependencies — pure Swift / AVFoundation |
 
-### 🔜 Upcoming Features
+---
 
-- 🎮 Ipod Built-in Games
-- 📸 Ability to View Photos and Videos from the device
-- 📝 Lyrics Support
+## 🛠 Requirements
 
-## 💻 Installation links
+- **macOS 14 Sonoma** or later
+- **Xcode 15** or later
 
-<table>
-  <tr>
-    <th>Platform</th>
-    <th>Installation Links</th>
-  </tr>
-  <tr>
-    <td>Android</td>
-    <td>
-      <a href="https://play.google.com/store/apps/details?id=com.adeeteya.classipod">
-        <img height="80" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
-      </a>
-      <br>
-      <a href="https://f-droid.org/packages/com.adeeteya.classipod">
-        <img height="80" alt="Get it on F-Droid" src="https://f-droid.org/badge/get-it-on.png">
-      </a>
-      <br>
-      <a href="https://github.com/adeeteya/Classipod/releases/latest/download/Classipod-Android.apk">
-        <img alt="APK download" src="https://img.shields.io/static/v1?label=Download&message=Android+.apk&color=2ea44f&style=for-the-badge&logo=Android&logoColor=white&logoSize=auto">
-      </a>
-    </td>
-  </tr>
+---
 
-  <tr>
-      <td>Linux</td>
-      <td>
-        <a href="https://github.com/adeeteya/Classipod/releases/latest/download/Classipod-Linux-AppImage.AppImage">
-          <img alt="Download .AppImage" src="https://img.shields.io/static/v1?label=Download&message=.AppImage&color=FCC624&style=for-the-badge&logo=linux&logoColor=white&logoSize=auto">
-        </a>
-        <br>
-        <br>
-        <a href="https://github.com/adeeteya/Classipod/releases/latest/download/Classipod-Linux-deb.deb">
-          <img alt="Download .deb" src="https://img.shields.io/static/v1?label=Download&message=%20%20%20%20%20.deb&color=A81D33&style=for-the-badge&logo=debian&logoColor=white&logoSize=auto">
-        </a>
-        <br>
-        <br>
-        <a href="https://github.com/adeeteya/Classipod/releases/latest/download/Classipod-Linux-rpm.rpm">
-          <img alt="Download .rpm" src="https://img.shields.io/static/v1?label=Download&message=.rpm&color=EE0000&style=for-the-badge&logo=redhat&logoColor=white&logoSize=auto">
-        </a>
-      </td>
-  </tr>
+## 🚀 Getting Started
 
-  <tr>
-      <td>Windows</td>
-      <td>
-        <a href="https://github.com/adeeteya/Classipod/releases/latest/download/Classipod-Windows.exe">
-          <img alt="Download Windows Installer" src="https://img.shields.io/static/v1?label=Download&message=Windows+.exe&color=blue&style=for-the-badge&logo=webtrees&logoColor=white&logoSize=auto">
-        </a>
-      </td>
-  </tr>
+```bash
+git clone https://github.com/19JVJeffery/iPod-Desktop-macOS.git
+cd iPod-Desktop-macOS/iPodDesktop
+open iPodDesktop.xcodeproj
+```
 
-  <tr>
-      <td>Web App</td>
-      <td>
-        <a href="https://adeeteya.github.io/Classipod/#/">
-          <img alt="Web App" src="https://img.shields.io/static/v1?label=Webapp&message=Visit+Website&color=blueviolet&style=for-the-badge&logo=googlechrome&logoColor=white&logoSize=auto">
-        </a>
-      </td>
-  </tr>
+Press **⌘R** in Xcode to build and run.  
+On first launch the app will ask you to choose your Music folder.
 
-</table>
+---
 
-## 🔌 Plugins
+## 📁 Project Layout
 
-| Name                                                                                          | Usage                                                                               |
-|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**audio_metadata_reader**](https://pub.dev/packages/audio_metadata_reader)                   | To read the metadata of the local mp3 files                                         |
-| [**audio_service**](https://pub.dev/packages/audio_service)                                   | To support background audio playback                                                |
-| [**battery_plus**](https://pub.dev/packages/battery_plus)                                     | Shows phone battery level and status                                                |
-| [**cupertino_icons**](https://pub.dev/packages/cupertino_icons)                               | For ios style icons                                                                 |
-| [**device_preview_plus**](https://pub.dev/packages/device_preview_plus)                       | For visualizing how the app looks on different devices and screens                  |
-| [**disable_battery_optimization**](https://github.com/adeeteya/Disable-Battery-Optimizations) | To Disable vendor or android specific battery optimizations for background playback |
-| [**file_picker**](https://pub.dev/packages/file_picker)                                       | To select the directory from which the music files are scanned                      |
-| [**flutter_localizations**](https://pub.dev/packages/flutter_localizations)                   | For in-app localization map data                                                    |
-| [**flutter_riverpod**](https://pub.dev/packages/flutter_riverpod)                             | For State Management                                                                |
-| [**go_router**](https://pub.dev/packages/go_router)                                           | To handle routing within the app                                                    |
-| [**hive_ce**](https://pub.dev/packages/hive_ce)                                               | To Cache Auio Metadata and store playlists                                          |
-| [**hive_ce_flutter**](https://pub.dev/packages/hive_ce_flutter)                               | For flutter specific libs of hive                                                   |
-| [**intl**](https://pub.dev/packages/intl)                                                     | For internalization and localization of the app                                     |
-| [**just_audio**](https://pub.dev/packages/just_audio)                                         | To play audio files                                                                 |
-| [**just_audio_background**](https://pub.dev/packages/just_audio_background)                   | To control audio through media notification                                         |
-| [**just_audio_media_kit**](https://pub.dev/packages/just_audio_media_kit)                     | To play audio files on Windows and Linux                                            |
-| [**media_kit_libs_linux**](https://pub.dev/packages/media_kit_libs_linux)                     | Media kit Libraries for Linux                                                       |
-| [**media_kit_libs_windows_audio**](https://pub.dev/packages/media_kit_libs_windows_audio)     | Media kit Libraries for Windows                                                     |
-| [**on_audio_query**](https://github.com/adeeteya/on_audio_query)                              | To fetch all the music files from Android and iOS                                   |
-| [**path_provider**](https://pub.dev/packages/path_provider)                                   | To fetch app data directories                                                       |
-| [**permission_handler**](https://pub.dev/packages/permission_handler)                         | To check and request for file and audio access permissions                          |
-| [**shared_preferences**](https://pub.dev/packages/shared_preferences)                         | To store system settings                                                            |
-| [**tutorial_coach_mark**](https://pub.dev/packages/tutorial_coach_mark)                       | To provide app tutorial to the users                                                |
-| [**universal_html**](https://pub.dev/packages/universal_html)                                 | For Launching the app in full-screen mode on web versions                           |
-| [**url_launcher**](https://pub.dev/packages/url_launcher)                                     | For Launching the Donation Page Link                                                |
-| [**vibration**](https://pub.dev/packages/vibration)                                           | Used for vibration while using device controls                                      |
-| [**vibration_web**](https://pub.dev/packages/vibration_web)                                   | Used for vibration on the webapp version                                            |
-| [**build_runner**](https://pub.dev/packages/build_runner)                                     | For code generation                                                                 |
-| [**custom_lint**](https://pub.dev/packages/custom_lint)                                       | For using custom lint rules                                                         |
-| [**flutter_lints**](https://pub.dev/packages/flutter_lints)                                   | For using recommended flutter lints                                                 |
-| [**flutter_test**](https://pub.dev/packages/flutter_test)                                     | For unit and widget testing the app                                                 |
-| [**hive_ce_generator**](https://pub.dev/packages/hive_ce_generator)                           | For automatically generating Hive TypeAdapters                                      |
-| [**riverpod_lint**](https://pub.dev/packages/riverpod_lint)                                   | For using riverpod specific linting rules                                           |
+```
+iPodDesktop/
+├── iPodDesktop.xcodeproj/      ← Xcode project
+└── iPodDesktop/
+    ├── iPodDesktopApp.swift    ← App entry point & window setup
+    ├── Models/
+    │   ├── Track.swift         ← Audio file data model
+    │   ├── Playlist.swift      ← User playlist model
+    │   └── iPodColorScheme.swift  ← All 12 device colour themes
+    ├── ViewModels/
+    │   ├── AppState.swift      ← Navigation stack & settings
+    │   ├── PlayerEngine.swift  ← AVFoundation playback engine
+    │   └── LibraryManager.swift  ← File scanner & metadata reader
+    └── Views/
+        ├── ContentView.swift
+        ├── DeviceBodyView.swift  ← iPod frame, layout & click-wheel wiring
+        ├── ClickWheelView.swift  ← Rotation + tap gesture handling
+        ├── iPodScreenView.swift  ← Routes the navigation stack to screens
+        ├── StatusBarView.swift   ← iPod status bar + battery indicator
+        ├── Shared/
+        │   ├── ListRowView.swift
+        │   └── iPodListScreen.swift
+        └── Screens/
+            ├── MainMenuView.swift
+            ├── MusicMenuView.swift
+            ├── BrowseViews.swift   ← Songs, Albums, Artists, Genres
+            ├── PlaylistViews.swift
+            ├── NowPlayingView.swift
+            ├── SettingsView.swift
+            ├── SearchView.swift
+            └── CoverFlowView.swift
+```
 
-## 🤓 Author
+---
 
-**[Aditya R](https://github.com/adeeteya)**
+## ⌨️ Keyboard Shortcuts
 
-## 🔖 LICENCE
+| Action | Shortcut |
+|--------|----------|
+| Play / Pause | Space |
+| Next Track | ⌘→ |
+| Previous Track | ⌘← |
+| Volume Up | ⌘↑ |
+| Volume Down | ⌘↓ |
+| Choose Music Folder | ⌘O |
+| Rescan Library | ⌘R |
 
-Copyright (c) 2025 Aditya R
-[BSD-4-Clause LICENCE](https://github.com/adeeteya/Classipod/blob/master/LICENSE)
+---
 
-## 🙏 Attributions
+## 📜 License
 
-<a href="https://www.flaticon.com/free-icons/ipod" title="ipod icons">Ipod icons created by
-Freepik - Flaticon</a>
+[MIT](LICENSE)
