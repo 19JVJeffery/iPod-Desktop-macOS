@@ -31,10 +31,11 @@ struct DeviceBodyView: View {
     @ViewBuilder
     private func deviceFrame(width: CGFloat, height: CGFloat) -> some View {
         let scheme = appState.colorScheme
+        let r      = ContentView.deviceCornerRadius
 
         ZStack {
             // Base gradient
-            RoundedRectangle(cornerRadius: height * 0.062)
+            RoundedRectangle(cornerRadius: r, style: .continuous)
                 .fill(
                     LinearGradient(
                         colors: [scheme.frameTopColor, scheme.frameBottomColor],
@@ -44,7 +45,7 @@ struct DeviceBodyView: View {
                 )
 
             // Noise grain overlay (simulated with a very subtle opacity pattern)
-            RoundedRectangle(cornerRadius: height * 0.062)
+            RoundedRectangle(cornerRadius: r, style: .continuous)
                 .fill(
                     LinearGradient(
                         colors: [
@@ -58,7 +59,7 @@ struct DeviceBodyView: View {
                 )
 
             // Edge shadow ring
-            RoundedRectangle(cornerRadius: height * 0.062)
+            RoundedRectangle(cornerRadius: r, style: .continuous)
                 .strokeBorder(
                     LinearGradient(
                         colors: [
@@ -71,16 +72,21 @@ struct DeviceBodyView: View {
                     lineWidth: 1.2
                 )
         }
-        .shadow(color: .black.opacity(0.55), radius: 20, x: 0, y: 8)
+        // No explicit drop shadow here — the system window shadow (from the
+        // transparent-window setup in WindowConfigurator) handles the outer glow.
     }
 
     // MARK: - Screen + Click Wheel layout
 
     @ViewBuilder
     private func deviceContents(width: CGFloat, height: CGFloat) -> some View {
-        let hPad  = width  * 0.072
-        let vPad  = height * 0.040
-        let screenH = height * 0.395
+        let hPad    = width  * 0.072
+        let vPad    = height * 0.040
+        let screenW = width  - hPad * 2
+        // iPod Classic screen is wider than tall: 320 px wide × 240 px tall (4:3
+        // landscape). So screen height = screen width × ¾ faithfully reproduces
+        // the real device proportions.
+        let screenH = screenW * 0.75
         let wheelD  = width  * 0.74
 
         VStack(spacing: 0) {
@@ -95,7 +101,7 @@ struct DeviceBodyView: View {
             // ── Screen ──────────────────────────────────────────────────────
             iPodScreenView()
                 .frame(
-                    width:  width  - hPad * 2,
+                    width:  screenW,
                     height: screenH
                 )
                 .padding(.horizontal, hPad)
@@ -131,9 +137,9 @@ struct DeviceBodyView: View {
 
     @ViewBuilder
     private func reflectionOverlay(width: CGFloat, height: CGFloat) -> some View {
-        let cornerR = height * 0.062
+        let cornerR = ContentView.deviceCornerRadius
 
-        RoundedRectangle(cornerRadius: cornerR)
+        RoundedRectangle(cornerRadius: cornerR, style: .continuous)
             .fill(
                 LinearGradient(
                     colors: [

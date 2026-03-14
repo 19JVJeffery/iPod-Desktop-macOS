@@ -4,57 +4,43 @@ import SwiftUI
 
 /// Root SwiftUI view.
 ///
-/// The window has no visible title bar (hiddenTitleBar style) so the iPod
-/// device body sits flush against the macOS window chrome.  The window
-/// background is a gradient that exactly mirrors the device frame, giving the
-/// illusion that the device *is* the window.
+/// The window is made fully transparent via `WindowConfigurator` so that the
+/// device body's rounded corners and the system-rendered window shadow define
+/// the entire visual shape — no macOS title-bar chrome is visible.
 struct ContentView: View {
 
     @EnvironmentObject var appState: AppState
     @EnvironmentObject var player:   PlayerEngine
     @EnvironmentObject var library:  LibraryManager
 
-    // Device dimensions — proportional to the original 5th-gen iPod Classic
-    // (40 mm wide × 83.6 mm tall = ratio ≈ 1 : 2.09)
+    // Device canvas size — proportional to the iPod Classic 5th-gen face plate.
+    // The corner radius is kept as a constant so ContentView's clipShape and
+    // DeviceBodyView's RoundedRectangle always agree.
     private let deviceWidth:  CGFloat = 310
     private let deviceHeight: CGFloat = 648
+    static  let deviceCornerRadius: CGFloat = 38   // squircle radius (continuous)
 
     var body: some View {
-        ZStack {
-            // Window fill — exact same gradient as the device frame so there
-            // is no visible boundary between the frame and the window edge.
-            LinearGradient(
-                colors: [
-                    appState.colorScheme.frameTopColor,
-                    appState.colorScheme.frameBottomColor,
-                ],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-
-            // Allow the title-bar drag area to move the window by dragging
-            // the device frame itself (moves the whole window).
-            Color.clear
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .contentShape(Rectangle())
-
-            DeviceBodyView()
-                .frame(width: deviceWidth, height: deviceHeight)
-        }
-        .frame(width: deviceWidth, height: deviceHeight)
-        .onReceive(library.$scanFolderURL) { url in
-            guard url == nil, library.tracks.isEmpty else { return }
-            // Auto-prompt folder selection on first launch only
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                chooseMusicFolder()
+        DeviceBodyView()
+            .frame(width: deviceWidth, height: deviceHeight)
+            // Clip SwiftUI content to the device shape so the transparent
+            // window corners reveal the macOS desktop behind the device.
+            .clipShape(RoundedRectangle(cornerRadius: Self.deviceCornerRadius,
+                                        style: .continuous))
+            // Bridge into AppKit to configure the hosting NSWindow.
+            .background(WindowConfigurator())
+            .onReceive(library.$scanFolderURL) { url in
+                guard url == nil, library.tracks.isEmpty else { return }
+                // Auto-prompt folder selection on first launch only.
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    chooseMusicFolder()
+                }
             }
-        }
     }
 
     // MARK: - First-launch folder selection
 
     private func chooseMusicFolder() {
-        // Default to ~/Music; show picker only if it doesn't exist
         if let musicDir = FileManager.default.urls(for: .musicDirectory,
                                                     in: .userDomainMask).first,
            FileManager.default.fileExists(atPath: musicDir.path) {
@@ -67,6 +53,34 @@ struct ContentView: View {
             panel.prompt = "Select"
             if panel.runModal() == .OK, let url = panel.url {
                 library.scanFolderURL = url
+            }
+        }
+    }
+}
+
+// MARK: - WindowConfigurator
+
+/// Reaches into the hosting `NSWindow` to make it transparent and movable by
+/// its background, so the device body's rounded corners and the compositor-
+/// rendered shadow are the only visible window chrome.
+private struct WindowConfigurator: NSViewRepresentable {
+    func makeNSView(context: Context) -> ConfiguratorView { ConfiguratorView() }
+    func updateNSView(_ view: ConfiguratorView, context: Context) {}
+
+    final class ConfiguratorView: NSView {
+        override func viewDidMoveToWindow() {
+            super.viewDidMoveToWindow()
+            guard let win = window else { return }
+            DispatchQueue.main.async {
+                // Transparent window — corner shape comes from content alpha.
+                win.isOpaque = false
+                win.backgroundColor = .clear
+                // Allow dragging the window by clicking anywhere on the body.
+                win.isMovableByWindowBackground = true
+                // Hide traffic-light buttons; use Cmd+Q / menu bar to quit.
+                for type: NSWindow.ButtonType in [.closeButton, .miniaturizeButton, .zoomButton] {
+                    win.standardWindowButton(type)?.isHidden = true
+                }
             }
         }
     }
